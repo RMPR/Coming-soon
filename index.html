@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" type="text/css" href="index.css" />
-    <title>Coming Soon</title>
-        <script>
+    <script>
             // Date de destination
             var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
 
@@ -36,41 +34,39 @@
                 }
             }, 1000);
         </script>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Coming Soon</title>
 </head>
 <body>
-<div id="background">   <!-- Va vcontenir un Gif en background -->
+<div class="background">   <!-- Va contenir un Gif en background -->
     <div class="header">
         <header>
+            <img src="Profile.png" alt="logo" class="logo"/>   <!-- Logo de l'entreprise -->
             <h1>Nom de l'entreprise</h1>
         </header>
     </div>
     <div class="main">  <!-- Conteneur du corps de la page -->
-        <h2 align="center">Coming Soon ...</h2><br /><br />
-        <div id="horloge"> <!-- Widget horloge qui va servir de compteur-->
-			NOTRE SITE SERA BIENTOT EN LIGNE!!
-
+        <h2>En construction</h2>
+        <div id="horloge" class="horloge"> <!-- Widget horloge qui va servir de compteur-->
         </div>
         <form action="traitement.php" align="center">  <!-- Inscription à la newsletter -->
-            <h2 >Soyez prévenus dès la publication du site</h2>
-            <label for="email" class="" required="required">
-                e-Mail
-            </label>
+            <h2>Me tenir informé</h2>
             <input type="email" name="email" id="email" placeholder="Entrez votre adresse e-mail" />
             <input type="submit" value="Valider" />
         </form>
     </div>
+</div>
 	<footer>
-    <div id="footer">    <!-- Informations en tout genre sur la boîte -->
-        
+    <div class="footer">    <!-- Informations en tout genre sur la boîte -->       
             <div class="foot">
-                <img src="#" alt="logo" />  <!-- Logo du site dans le footer -->
+                <img src="Profile.png" alt="logo" />  <!-- Logo du site dans le footer -->
             </div>
             <div class="foot">   <!-- Deuxième colonne du footer -->
-                <p><h3>Retrouvez nous sur</h3><br />
-                    Facebook<br />
-                    Twitter<br />
-                    Google +<br />
-                    Youtube <br />
+                <p><h3>Retrouvez nous sur</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Google +</a>
+                    <a href="#">Youtube</a>
                 </p>
             </div>
             <div class="foot">   <!-- Troisième colonne du footer -->
@@ -84,6 +80,6 @@
         
     </div>
 	</footer>
-</div>
+
 </body>
 </html>
